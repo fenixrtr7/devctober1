@@ -33,4 +33,15 @@ public class CarControllerM : MonoBehaviour
         // Limites donde se puede mover
         rbd.position = new Vector2(Mathf.Clamp(rbd.position.x, boundary.xMin, boundary.xMax), distanceY);
     }
+
+    private void OnCollisionEnter2D(Collision2D other) {
+        if (other.gameObject.CompareTag("CarEnemy"))
+        {
+            this.gameObject.SetActive(false);
+        }
+    }
+
+    // private void OnTriggerEnter2D(Collider2D other) {
+        
+    // }
 }

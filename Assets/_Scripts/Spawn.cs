@@ -6,7 +6,7 @@ public class Spawn : MonoBehaviour
 {
     float timeToSpawn, angulo = 0; 
     public float minRandom = 1.8f, maxRandom = 5;
-    public GameObject carPrefab;
+    public GameObject[] carPrefab;
 
     public bool carFall = false;
     // Start is called before the first frame update
@@ -24,7 +24,8 @@ public class Spawn : MonoBehaviour
         {
             angulo = 180;
         }
-        GameObject car = Instantiate(carPrefab,this.transform.position, Quaternion.Euler(0,0,angulo));
+        int numeroPrefab = Random.Range(0, carPrefab.Length);
+        GameObject car = Instantiate(carPrefab[numeroPrefab],this.transform.position, Quaternion.Euler(0,0,angulo));
         if (!carFall)
         {
             car.GetComponent<CarEnemy>().speed *= -1;
