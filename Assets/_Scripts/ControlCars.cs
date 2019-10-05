@@ -7,7 +7,8 @@ public class ControlCars : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("CarEnemy"))
         {
-            Destroy(other);
+            Destroy(other.gameObject);
+            Debug.Log("Carro destruido");
         }
     }
 }
