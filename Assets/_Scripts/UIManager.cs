@@ -13,7 +13,8 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+         maxScore = PlayerPrefs.GetFloat("MaxScore", 0);
+         maxScoreText.text = "Max Score: " + maxScore.ToString("0.00");
     }
 
     // Update is called once per frame
@@ -30,5 +31,19 @@ public class UIManager : MonoBehaviour
     {
         GameManager.sharedInstance.StartGame();
         panelMenu.SetActive(false);
+    }
+
+    public void UpdateMaxScore()
+    {
+        // Activar panel Game Over
+        panelGameOver.SetActive(true);
+
+        // Actualizar Score
+        if (score > maxScore)
+        {
+            maxScore = score;
+            PlayerPrefs.SetFloat("MaxScore", maxScore);
+            maxScoreText.text = "Max Score: " + maxScore.ToString("0.00");
+        }
     }
 }

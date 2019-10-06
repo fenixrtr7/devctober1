@@ -12,7 +12,7 @@ public class CarEnemy : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rbd = GetComponent<Rigidbody2D>();   
+        rbd = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -21,4 +21,8 @@ public class CarEnemy : MonoBehaviour
         Vector2 movement = new Vector2(distanceX, moveVertical);
         rbd.velocity =  new Vector2(distanceX, movement.y * speed);
     }
+    // public void MoreDificult()
+    // {
+    //     speed += 0.1f;
+    // }
 }

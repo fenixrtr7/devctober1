@@ -46,13 +46,9 @@ public class CarControllerM : MonoBehaviour
     {
         if (other.gameObject.CompareTag("CarEnemy"))
         {
-            uIManager.panelGameOver.SetActive(true);
+            uIManager.UpdateMaxScore();
             GameManager.sharedInstance.GameOver();
             this.gameObject.SetActive(false);
         }
     }
-
-    // private void OnTriggerEnter2D(Collider2D other) {
-
-    // }
 }

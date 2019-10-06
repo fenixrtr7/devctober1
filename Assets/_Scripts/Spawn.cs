@@ -9,6 +9,10 @@ public class Spawn : MonoBehaviour
     public GameObject[] carPrefab;
 
     public bool carFall = false;
+
+    int contadorCar = 0, levelCar = 1;
+    public int contadorLimit = 2;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +22,8 @@ public class Spawn : MonoBehaviour
     public IEnumerator InvokeCar()
     {
         Debug.Log("Se invoca");
+        contadorCar++;
+
         yield return new WaitForSeconds(0.5f);
         
         if (GameManager.sharedInstance.currentGameState == GameState.inGame)
@@ -35,6 +41,14 @@ public class Spawn : MonoBehaviour
             if (!carFall)
             {
                 car.GetComponent<CarEnemy>().speed *= -1;
+
+                // Level Up
+                if (contadorCar > (contadorLimit * levelCar))
+                {
+                    car.GetComponent<CarEnemy>().speed += 0.1f * levelCar;
+                    Debug.Log("Level up"+ car.GetComponent<CarEnemy>().speed);
+                    levelCar++;
+                }
             }
             StartCoroutine(InvokeCar());
         }

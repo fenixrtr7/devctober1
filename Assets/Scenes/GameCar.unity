@@ -287,7 +287,14 @@ MonoBehaviour:
   - {fileID: 4733157438741019297, guid: 756175e01c67a21498e901a953a13b84, type: 3}
   - {fileID: 4733157438741019297, guid: 8359fa4e116709a40aeeca527031173d, type: 3}
   - {fileID: 4733157438741019297, guid: 9761c456189c70c438a2dbd8c6c9667a, type: 3}
+  - {fileID: 4733157438741019297, guid: 37f2ae42967719e4083833e56b9555e2, type: 3}
+  - {fileID: 4733157438741019297, guid: a7b0bb309d552624f8b89e0cc1d117fb, type: 3}
+  - {fileID: 4733157438741019297, guid: 81a06790417b3604caad86b42469d2b6, type: 3}
+  - {fileID: 4733157438741019297, guid: 80413dd630cec1944b9d8e7d1baa3b2c, type: 3}
+  - {fileID: 4733157438741019297, guid: 76ef84e43e12f74449d216212a6cbb50, type: 3}
+  - {fileID: 4733157438741019297, guid: 68abb63019e741649aba2d795b2c5079, type: 3}
   carFall: 1
+  contadorLimit: 2
 --- !u!4 &20482647
 Transform:
   m_ObjectHideFlags: 0
@@ -874,7 +881,14 @@ MonoBehaviour:
   - {fileID: 4733157438741019297, guid: 756175e01c67a21498e901a953a13b84, type: 3}
   - {fileID: 4733157438741019297, guid: 8359fa4e116709a40aeeca527031173d, type: 3}
   - {fileID: 4733157438741019297, guid: 9761c456189c70c438a2dbd8c6c9667a, type: 3}
+  - {fileID: 4733157438741019297, guid: 37f2ae42967719e4083833e56b9555e2, type: 3}
+  - {fileID: 4733157438741019297, guid: a7b0bb309d552624f8b89e0cc1d117fb, type: 3}
+  - {fileID: 4733157438741019297, guid: 81a06790417b3604caad86b42469d2b6, type: 3}
+  - {fileID: 4733157438741019297, guid: 80413dd630cec1944b9d8e7d1baa3b2c, type: 3}
+  - {fileID: 4733157438741019297, guid: 76ef84e43e12f74449d216212a6cbb50, type: 3}
+  - {fileID: 4733157438741019297, guid: 68abb63019e741649aba2d795b2c5079, type: 3}
   carFall: 1
+  contadorLimit: 2
 --- !u!1 &307909662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1026,6 +1040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scoreText: {fileID: 2072279025}
+  maxScoreText: {fileID: 2023334894}
   panelMenu: {fileID: 1863211837}
   panelGameOver: {fileID: 2130354130}
 --- !u!4 &368583426
@@ -1835,7 +1850,14 @@ MonoBehaviour:
   - {fileID: 4733157438741019297, guid: 756175e01c67a21498e901a953a13b84, type: 3}
   - {fileID: 4733157438741019297, guid: 8359fa4e116709a40aeeca527031173d, type: 3}
   - {fileID: 4733157438741019297, guid: 9761c456189c70c438a2dbd8c6c9667a, type: 3}
+  - {fileID: 4733157438741019297, guid: 37f2ae42967719e4083833e56b9555e2, type: 3}
+  - {fileID: 4733157438741019297, guid: a7b0bb309d552624f8b89e0cc1d117fb, type: 3}
+  - {fileID: 4733157438741019297, guid: 81a06790417b3604caad86b42469d2b6, type: 3}
+  - {fileID: 4733157438741019297, guid: 80413dd630cec1944b9d8e7d1baa3b2c, type: 3}
+  - {fileID: 4733157438741019297, guid: 76ef84e43e12f74449d216212a6cbb50, type: 3}
+  - {fileID: 4733157438741019297, guid: 68abb63019e741649aba2d795b2c5079, type: 3}
   carFall: 0
+  contadorLimit: 2
 --- !u!4 &1028991514
 Transform:
   m_ObjectHideFlags: 0
@@ -1844,7 +1866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1028991512}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.62, y: -16.65, z: 0}
+  m_LocalPosition: {x: 0.74, y: -16.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 460001461}
@@ -2995,7 +3017,14 @@ MonoBehaviour:
   - {fileID: 4733157438741019297, guid: 756175e01c67a21498e901a953a13b84, type: 3}
   - {fileID: 4733157438741019297, guid: 8359fa4e116709a40aeeca527031173d, type: 3}
   - {fileID: 4733157438741019297, guid: 9761c456189c70c438a2dbd8c6c9667a, type: 3}
+  - {fileID: 4733157438741019297, guid: 37f2ae42967719e4083833e56b9555e2, type: 3}
+  - {fileID: 4733157438741019297, guid: a7b0bb309d552624f8b89e0cc1d117fb, type: 3}
+  - {fileID: 4733157438741019297, guid: 81a06790417b3604caad86b42469d2b6, type: 3}
+  - {fileID: 4733157438741019297, guid: 80413dd630cec1944b9d8e7d1baa3b2c, type: 3}
+  - {fileID: 4733157438741019297, guid: 76ef84e43e12f74449d216212a6cbb50, type: 3}
+  - {fileID: 4733157438741019297, guid: 68abb63019e741649aba2d795b2c5079, type: 3}
   carFall: 0
+  contadorLimit: 2
 --- !u!4 &2066510098
 Transform:
   m_ObjectHideFlags: 0
@@ -3004,7 +3033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066510096}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.02, y: -16.65, z: 0}
+  m_LocalPosition: {x: 2.09, y: -16.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 460001461}
